@@ -10,8 +10,6 @@ public class Exercise9PaintCalculator {
     }
 
     public String paintNeededForRoundRoom(double radius) {
-
-
         return "" + (int) Math.ceil((radius * radius) * Math.PI);
     }
 }
