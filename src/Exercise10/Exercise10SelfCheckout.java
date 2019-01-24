@@ -6,7 +6,6 @@ public class Exercise10SelfCheckout {
 
 
     public int subtotalCalculator(Item... items) {
-
         int total = 0;
         for (Item item : items) {
             total += item.getItemPrice() * item.getItemQuantity();
@@ -15,18 +14,11 @@ public class Exercise10SelfCheckout {
     }
 
     public double taxCalculator(Item... items) {
-        int total = 0;
-        for (Item item : items) {
-            total += item.getItemPrice() * item.getItemQuantity();
-        }
-        return total * TAX_RATE;
+        return subtotalCalculator(items) * TAX_RATE;
     }
 
     public double totalCalculator(Item... items) {
-        int total = 0;
-        for (Item item : items) {
-            total += item.getItemPrice() * item.getItemQuantity();
-        }
+        int total = subtotalCalculator(items);
         return total * TAX_RATE + total;
     }
 

@@ -62,7 +62,7 @@ public class Exercise10SelfCheckoutTest {
 
     @Test
     public void taxOneItem() {
-        assertThat(exercise10SelfCheckout.taxCalculator(new Item("Coffee", 5, 1))).isEqualTo(0.275);
+        assertThat(exercise10SelfCheckout.taxCalculator(new Item("Coffee", 5, 1))).isEqualTo(0.28);
     }
 
     @Test
@@ -77,7 +77,7 @@ public class Exercise10SelfCheckoutTest {
 
     @Test
     public void totalWithTaxOneItem() {
-        assertThat(exercise10SelfCheckout.totalCalculator(new Item("Coffee", 5, 1))).isEqualTo(5.275);
+        assertThat(exercise10SelfCheckout.totalCalculator(new Item("Coffee", 5, 1))).isEqualTo(5.28);
     }
 
     @Test
